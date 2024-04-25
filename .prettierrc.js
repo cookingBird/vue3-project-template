@@ -1,4 +1,4 @@
-{
+export default {
   "printWidth": 90,
   "embeddedLanguageFormatting": "off",
   "tabWidth": 2,
@@ -24,7 +24,7 @@
         "embeddedLanguageFormatting": "auto"
       }
     },
-    { "files": "*.js(x)", "options": { "parser": "babel" } },
+    { "files": "*.(m|c)js(x)", "options": { "parser": "babel" } },
     { "files": "*.ts(x)", "options": { "parser": "typescript" } },
     {
       "files": "*.json",
