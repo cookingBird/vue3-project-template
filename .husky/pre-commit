@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 
-echo 'pre-commit --------------------------'
-npx prettier . --write
+
+npx --no -- lint-staged
