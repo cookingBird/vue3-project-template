@@ -13,6 +13,8 @@
     "vue": "^3.4.21"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@vitejs/plugin-vue": "^5.0.4",
     "husky": "^9.0.11",
     "prettier": "3.2.5",
