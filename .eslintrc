@@ -14,35 +14,28 @@
   },
   "overrides": [
     {
-      "files": ["**/*.json"],
-    },
-    {
-      "files": ["**/*.js"],
-    },
-    {
       "files": ["**/*.ts(x)"],
       "parser": "@typescript-eslint/parser",
-      "extends": ["eslint-config-airbnb-typescript/base", "prettier"],
+      "extends": ["eslint-config-airbnb-typescript/base"],
       "parserOptions": {
         "project": "./tsconfig.json",
       },
     },
     {
+      "files": ["**/*.d.ts"],
+      "parser": "@typescript-eslint/parser",
+    },
+    {
       "files": ["**/*.vue"],
       "parser": "vue-eslint-parser",
+      "extends": ["plugin:vue/vue3-recommended"],
       "parserOptions": {
         "parser": "@typescript-eslint/parser",
-        "ecmaVersion": "latest",
         "vueFeatures": {
           "filter": true,
           "interpolationAsNonHTML": false,
         },
       },
-      "extends": [
-        "eslint:recommended",
-        "plugin:vue/vue3-recommended",
-        "prettier",
-      ],
     },
   ],
 }
