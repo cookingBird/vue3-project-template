@@ -30,7 +30,19 @@
     {
       "files": ["**/*.vue"],
       "parser": "vue-eslint-parser",
-      "extends": ["plugin:vue/vue3-recommended", "prettier"],
+      "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "ecmaVersion": "latest",
+        "vueFeatures": {
+          "filter": true,
+          "interpolationAsNonHTML": false,
+        },
+      },
+      "extends": [
+        "eslint:recommended",
+        "plugin:vue/vue3-recommended",
+        "prettier",
+      ],
     },
   ],
 }
