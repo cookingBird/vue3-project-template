@@ -1,3 +1,6 @@
 {
-  "*": ["npx prettier . --write --list-different"]
+  "*": [
+    "npx prettier ./src/**/*.{js(x),ts(x),vue} --write --list-different"
+  ],
+  "*.{js,ts,jsx,vue,html}": ["eslint --fix"]
 }
