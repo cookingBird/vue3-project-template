@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
-
+. "${0%/*}/_/h"
 
 npx --no -- lint-staged
