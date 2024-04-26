@@ -11,7 +11,7 @@
   "quoteProps": "as-needed",
   "experimentalTernaries": true,
   "bracketSpacing": true,
-  "bracketSameLine": true,
+  "bracketSameLine": false,
   "proseWrap": "preserve",
   "overrides": [
     {
