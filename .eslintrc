@@ -16,7 +16,7 @@
     {
       "files": ["**/*.ts(x)"],
       "parser": "@typescript-eslint/parser",
-      "extends": ["eslint-config-airbnb-typescript/base"],
+      "extends": ["eslint-config-airbnb-typescript/base", "prettier"],
       "parserOptions": {
         "project": "./tsconfig.json",
       },
@@ -28,7 +28,7 @@
     {
       "files": ["**/*.vue"],
       "parser": "vue-eslint-parser",
-      "extends": ["plugin:vue/vue3-recommended"],
+      "extends": ["plugin:vue/vue3-recommended", "prettier"],
       "parserOptions": {
         "parser": "@typescript-eslint/parser",
         "vueFeatures": {
