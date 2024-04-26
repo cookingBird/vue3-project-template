@@ -1,0 +1,35 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es6": true,
+  },
+  "globals": {
+    "defineOptions": "writable",
+  },
+  "extends": ["eslint:recommended", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+  },
+  "overrides": [
+    {
+      "files": ["**/*.json"],
+    },
+    {
+      "files": ["**/*.js"],
+    },
+    {
+      "files": ["**/*.ts(x)"],
+      "parser": "@typescript-eslint/parser",
+      "extends": ["eslint-config-airbnb-typescript/base", "prettier"],
+      "parserOptions": {
+        "project": "./tsconfig.json",
+      },
+    },
+    {
+      "files": ["**/*.vue"],
+      "extends": ["plugin:vue/vue3-recommended", "prettier"],
+    },
+  ],
+}
