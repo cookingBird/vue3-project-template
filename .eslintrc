@@ -4,7 +4,7 @@
     "browser": true,
     "es6": true,
   },
-  "extends": ["eslint:recommended", "prettier"],
+  "extends": ["eslint:recommended", "plugin:eslint-plugin-prettier/recommended"],
   "globals": {
     "defineOptions": "writable",
   },
@@ -16,7 +16,7 @@
     {
       "files": ["**/*.ts(x)"],
       "parser": "@typescript-eslint/parser",
-      "extends": ["eslint-config-airbnb-typescript/base", "prettier"],
+      "extends": ["eslint-config-airbnb-typescript/base", "plugin:eslint-plugin-prettier/recommended"],
       "parserOptions": {
         "project": "./tsconfig.json",
       },
@@ -28,7 +28,7 @@
     {
       "files": ["**/*.vue"],
       "parser": "vue-eslint-parser",
-      "extends": ["plugin:vue/vue3-recommended", "prettier"],
+      "extends": ["plugin:vue/vue3-recommended", "plugin:eslint-plugin-prettier/recommended"],
       "parserOptions": {
         "parser": "@typescript-eslint/parser",
         "vueFeatures": {
