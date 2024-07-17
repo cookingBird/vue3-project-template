@@ -1,0 +1,3 @@
+{
+  "*.{js,ts,jsx,vue,html}": ["eslint --fix --ext .js,.ts,.vue src"]
+}
