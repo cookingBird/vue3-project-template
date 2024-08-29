@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "prepare": "husky && git config commit.template git-commit-template.txt",
+    "prepare": "husky && git config commit.template .gitmessage.txt",
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
